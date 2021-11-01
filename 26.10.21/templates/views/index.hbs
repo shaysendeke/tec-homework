@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {{>header}}
+    <h2>Location</h2>
+    <p>search your coordinates</p>
+    <main>
+        <form action="/city" method="get">
+        <input type="text" name="city" placeholder="enter city">
+        <button type="submit">search</button>
+        </form>
+        <h2>{{city}}</h2>
+        <p>{{lat}}</p>
+        <p>{{lon}}</p>
+    </main>
+    {{>footer}}
+</body>
+</html>

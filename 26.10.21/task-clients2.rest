@@ -1,0 +1,31 @@
+GET http://localhost:8000/comments
+
+###
+
+GET http://localhost:8000/comments/2
+
+###
+
+POST http://localhost:8000/comments/
+Content-Type: application/json
+
+{
+    "name": "hgh",
+    "body": "sd",
+    "mail": "fd"
+}
+
+###
+
+DELETE http://localhost:8000/comments/1
+
+###
+
+PATCH http://localhost:8000/comments/1
+Content-Type: application/json
+
+{
+    "name": "g",
+    "body": "u",
+    "mail": "d"
+}
