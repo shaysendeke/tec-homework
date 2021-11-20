@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/16.4.0/umd/react.development.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.4.0/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.26.0/babel.min.js"></script>
+    <title>Document</title>
+
+</head>
+<body>
+
+    <main id=app></main>
+    
+</body>
+<script type="text/babel">
+    const firstElement = document.getElementById("app")
+
+function Hello(){
+    return <h1>Hello</h1>
+}
+function Car(){
+    const car = 
+{manufacturer: "mazda",
+        model: "3",
+        yaer: "2020"
+    }
+    return<h3> {car.manufacturer} {" "} {car.model} {" "} {car.yaer}</h3>
+
+}
+function Name() {
+    return <h6><Hello> </Hello> Shay</h6>
+}
+
+function HeadrMainFooter(){
+    return<div>
+    <header> hello </header>
+    <main> this is main </main>
+    <footer> this is footer</footer>
+    </div>
+
+}
+function ReturnName(){
+    const names=[ "yoel", "david", "shlomo", "shaul", "tomer", "binyamin", "yakov", "shimon", "asher"]
+    for (let index = 0; index < names.length; index++) {
+        return <h2>hello {names[index]}</h2>
+        
+    }
+
+}
+
+function NameAndAge(){
+    const age = 18
+    const name = "david"
+    return <h2>{name} is {age} years old </h2>
+}
+function Img(){
+    const urlImg="https://cdn.pixabay.com/photo/2016/10/31/19/04/balloons-1786430__340.jpg"
+    return <img src={urlImg}></img>
+}
+
+function Video (){
+    const urlVideo="https://player.vimeo.com/external/187641505.sd.mp4?s=010b33a32620b73627dd2c53aa60e901e07b6d31&profile_id=164"
+    return <video src={urlVideo} autoplay="yes" controls></video>
+}
+
+ReactDOM.render(<div>
+    <Hello />
+    <Car /><br></br>
+    <Car /><br></br>
+    <Car /><br></br>
+    <Car /><br></br>
+    <Car /><br></br>
+    <Car /><br></br>
+    <Car /><br></br>
+    <Car /><br></br>
+    <Car /><br></br>
+    <Car /><br></br>
+    <Car /><br></br>
+    <Name />
+    <HeadrMainFooter/><br></br>
+<ReturnName />
+<NameAndAge />
+<NameAndAge />
+<NameAndAge />
+<NameAndAge />
+<NameAndAge />
+<NameAndAge />
+<NameAndAge />
+<NameAndAge />
+<NameAndAge />
+<NameAndAge />
+<Img />
+<Video />
+
+</div>, firstElement
+
+)
+</script>
