@@ -42,14 +42,12 @@ function HeadrMainFooter(){
     </div>
 
 }
-function ReturnName(){
-    const names=[ "yoel", "david", "shlomo", "shaul", "tomer", "binyamin", "yakov", "shimon", "asher"]
-    for (let index = 0; index < names.length; index++) {
-        return <h2>hello {names[index]}</h2>
+function ReturnName(props){
+        return <h2>hello {props.name}</h2>
         
     }
 
-}
+
 
 function NameAndAge(){
     const age = 18
@@ -81,7 +79,10 @@ ReactDOM.render(<div>
     <Car /><br></br>
     <Name />
     <HeadrMainFooter/><br></br>
-<ReturnName />
+<ReturnName name="shosi" />
+<ReturnName name="yossi" />
+<ReturnName name="roee" />
+<ReturnName name="yonni" />
 <NameAndAge />
 <NameAndAge />
 <NameAndAge />
