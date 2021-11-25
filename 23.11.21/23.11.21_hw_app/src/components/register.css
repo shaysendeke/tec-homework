@@ -1,0 +1,22 @@
+.registerDiv{
+    text-align: center;
+    font-family: fantasy;
+    height: 250px;
+    border: solid black 1px;
+    background-color: honeydew;
+}
+.registerBtn{
+    background-color: rgb(8, 230, 8);
+}
+
+input {
+    padding: 15px;
+    margin: 15px;
+}
+.mainDiv {
+    /* width: 250px; */
+    background-color: rgb(162, 167, 162);
+    margin-bottom: 10px;
+
+}
+
