@@ -25,7 +25,7 @@ export default class Weather extends Component {
                 <h1>Welcome to Wether API </h1>
               <input placeholder="Select a City" onChange={e=>this.setState({city:e.target.value})}/><br/>
               <button onClick={this.GetWeather}>select</button>
-              <p> {this.state.temp}</p>
+              <p>The Current Temperature Is {this.state.temp}C</p>
             </div>
         )
     }
