@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/shaysendeke/tec-homework#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "vite": "^2.7.2"
   }
 }
