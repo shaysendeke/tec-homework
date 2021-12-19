@@ -7,7 +7,7 @@ export default function Unmount() {
 
     return (
         <div>
-            <h1>Mounted</h1>
+            <h1>APP Has Mounted</h1>
         </div>
     )
 }
