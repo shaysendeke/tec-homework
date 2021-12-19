@@ -10,6 +10,7 @@ import ThreeCounters from './components/ThreeCounters';
 function App() {
   return (
     <div className="App">
+      
       <MyName /><hr />
       <Name userName={"Shay"} /><hr/>
       <ThreeCounters /><hr></hr>
