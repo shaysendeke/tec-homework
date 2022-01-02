@@ -6,7 +6,7 @@ function sumOfDigit(n)
     return (n % 10 + sumOfDigit(parseInt(n / 10)));
 }
  
-var num = 12345;
+var num = 999;
 var result = sumOfDigit(num);
 console.log( "Sum of digits in "+ num
    +" is "+result );
